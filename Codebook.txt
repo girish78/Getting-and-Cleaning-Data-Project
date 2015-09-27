@@ -1,0 +1,24 @@
+Code Book file lists all the varriable used in the run_analysis.R program
+   
+flUrl - url provided by the Project to download the data file
+trainsubject - Read Training Subject data in variable from downloaded file
+trainactivity - Read Training Activity data in variable
+trainset - Read Training data set in variable
+testsubject - Read Test Subject data in variable
+testactivity - Read Test Activity data in variable trainactivity
+testset - Read Test data set in variable testset
+features - Read features file in variable
+trainmerge - Merge Training Data Sets
+testmerge - Merge Test Data Sets 
+mergedata - Merge Data in Test & Training data Sets
+meancol - indexes in vector features having string as mean add 2 to offset for subject & activity column
+meancol1 - indexes in vector features having string as mean
+stdcol - indexes in vector features having string as std add 2 to offset for subject & activity column
+stdcol1 - indexes in vector features having string as std
+mean_std_col - Combine the two index vectors meancol & std col
+mean_std_data - extracts only the measurements on the mean and standard deviation
+varnames - Appropriately labels the data set with descriptive variable names
+fmeancol1 - List of character values subset from features vector by meancol1
+fstdcol1 - List of character values subset from features vector by stdcol1
+datamelt - Melt Data by Subject & Activity
+tidydata - Final outcome dcast data by Subject & Activity as var and take mean of all the other variables
